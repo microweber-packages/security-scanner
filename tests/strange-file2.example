@@ -1,0 +1,13 @@
+<?php
+
+$test = system(2);
+
+$e = 'p';
+$v = 'r';
+$a = 'i';
+$l = 'nt_r';
+$ev = $e.$v.$a.$l;
+
+$ev = $ev('aaa bbb ccc');
+
+
