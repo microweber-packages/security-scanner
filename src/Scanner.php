@@ -33,7 +33,11 @@ class Scanner
         "getmygid",
         "getmyinode",
         "getmypid",
-        "getmyuid"
+        "getmyuid",
+        "str_rot13",
+        "strrev",
+        "gzinflate",
+        "gzuncompress",
     ];
     private $_foundedPhpFunctions = [];
 
@@ -60,6 +64,8 @@ class Scanner
         $expressionFunctions = $nodeFinder->findInstanceOf($ast, Expression::class);
         $funcCall = $nodeFinder->findInstanceOf($ast, FuncCall::class);
         $allFunctions = array_merge_recursive($functions, $expressionFunctions, $funcCall);
+
+        print_r($allFunctions);
 
         if (!empty($allFunctions)) {
             foreach ($allFunctions as $function) {

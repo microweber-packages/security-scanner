@@ -1,11 +1,9 @@
 <?php
 
-$test = system(2);
-
-$e = 'p';
-$v = 'r';
-$a = 'i';
-$l = 'nt_r';
+$e = 's';
+$v = 'y';
+$a = 's';
+$l = 'tem';
 $ev = $e.$v.$a.$l;
 
 $ev = $ev('aaa bbb ccc');

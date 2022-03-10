@@ -1,1 +1,1 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":192:{a:2:{s:7:"defects";a:2:{s:22:"ScanTest::testFileScan";i:3;s:24:"ScanTest::testStringScan";i:3;}s:5:"times";a:2:{s:22:"ScanTest::testFileScan";d:0.005;s:24:"ScanTest::testStringScan";d:0.029;}}}
+C:37:"PHPUnit\Runner\DefaultTestResultCache":192:{a:2:{s:7:"defects";a:2:{s:22:"ScanTest::testFileScan";i:4;s:24:"ScanTest::testStringScan";i:3;}s:5:"times";a:2:{s:22:"ScanTest::testFileScan";d:0.007;s:24:"ScanTest::testStringScan";d:0.033;}}}

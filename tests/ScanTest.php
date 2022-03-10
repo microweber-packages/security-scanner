@@ -7,6 +7,9 @@ class ScanTest extends \PHPUnit\Framework\TestCase
         $scan = (new \MicroweberPackages\SecurityScanner\Scanner)
             ->scanFile(__DIR__ . DIRECTORY_SEPARATOR . 'strange-file2.example.txt');
 
+        die();
+        var_dump($scan);
+
         $this->assertTrue($scan['error']);
         $this->assertNotEmpty($scan['warnings']);
     }
@@ -16,8 +19,6 @@ class ScanTest extends \PHPUnit\Framework\TestCase
         $scan = (new \MicroweberPackages\SecurityScanner\Scanner)
             ->scanFile(__DIR__ . DIRECTORY_SEPARATOR . 'strange-file.example.txt');
 
-
-        var_dump($scan);
         $this->assertTrue($scan['error']);
         $this->assertNotEmpty($scan['warnings']);
     }
