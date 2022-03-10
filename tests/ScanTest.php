@@ -2,7 +2,6 @@
 
 class ScanTest extends \PHPUnit\Framework\TestCase
 {
-
     public function testFileScan()
     {
         $scan = (new \MicroweberPackages\SecurityScanner\Scanner)
