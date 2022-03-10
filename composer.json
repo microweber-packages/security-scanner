@@ -45,8 +45,7 @@
         "scanning"
     ],
     "require-dev": {
-        "orchestra/testbench": "4.*",
-        "mockery/mockery": "*"
+        "phpunit/phpunit": "9.4.3"
     },
     "autoload": {
         "psr-4": {
