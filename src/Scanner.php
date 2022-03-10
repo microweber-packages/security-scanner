@@ -10,7 +10,6 @@ use PhpParser\NodeVisitorAbstract;
 
 class Scanner
 {
-    public $file = false;
     public $notAllowedPhpFunctions = [
         'eval',
         'system',
@@ -19,15 +18,14 @@ class Scanner
     ];
     private $_foundedPhpFunctions = [];
 
-    public function file($file)
+    public function scanFile($file)
     {
-        $this->file = $file;
-        return $this;
+        $content = file_get_contents($file);
+        return $this->scanString($content);
     }
 
-    public function run()
-    {
-        $content = file_get_contents($this->file);
+    public function scanString($content) {
+
         $parser = (new \PhpParser\ParserFactory())->create(\PhpParser\ParserFactory::PREFER_PHP7);
         try {
             $ast = $parser->parse($content);
