@@ -45,7 +45,8 @@
         "scanning"
     ],
     "require-dev": {
-        "phpunit/phpunit": "9.4.3"
+        "nikic/php-parser": "*",
+        "phpunit/phpunit": "*"
     },
     "autoload": {
         "psr-4": {
