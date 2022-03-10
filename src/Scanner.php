@@ -14,7 +14,26 @@ class Scanner
         'eval',
         'system',
         'passthru',
-        'getenv',
+      //  'getenv',
+        'popen',
+        'pcntl_exec',
+        'proc_open',
+        'proc_nice',
+        'proc_terminate',
+        'proc_close',
+        'pfsockopen',
+        'fsockopen',
+        'apache_child_terminate',
+        'posix_kill',
+        'posix_mkfifo',
+        'posix_setpgid',
+        'posix_setsid',
+        "getcwd",
+        "getlastmo",
+        "getmygid",
+        "getmyinode",
+        "getmypid",
+        "getmyuid"
     ];
     private $_foundedPhpFunctions = [];
 
