@@ -81,7 +81,11 @@ class Scanner
             }
         }
 
-        return ['error' => true, 'message' => 'File is corrupted', 'warnings'=>$warnings];
+        if (!empty($warnings)) {
+            return ['error' => true, 'message' => 'File is corrupted', 'warnings' => $warnings];
+        }
+
+        return ['error' => false, 'message' => 'File is ok', 'warnings' => []];
 
     }
 
