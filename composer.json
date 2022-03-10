@@ -1,0 +1,62 @@
+{
+    "name": "microweber-packages/security-scanner",
+    "description": "Microweber security scanner is a php antimalware/antivirus scanner script written in php for scan your project.",
+    "authors": [
+        {
+            "name": "Microweber",
+            "email": "info@microweber.com"
+        },
+       {
+            "name": "Peter Ivanov",
+            "email": "peter@microweber.com"
+        },
+        {
+            "name": "Bozhidar Slaveykov",
+            "email": "bobi@microweber.com"
+        }
+    ],
+   "keywords": [
+        "antimalware",
+        "amwscan",
+        "scanner",
+        "antivirus",
+        "malware",
+        "virus",
+        "exploit",
+        "signatures",
+        "functions",
+        "eval",
+        "base64",
+        "deobfuscated",
+        "deobfuscator",
+        "deobfuscation",
+        "decode",
+        "obfuscated",
+        "obfuscation",
+        "evil",
+        "evil-code",
+        "code",
+        "analysis",
+        "tool",
+        "cleaner",
+        "backdoor",
+        "shell",
+        "scan",
+        "scanning"
+    ],
+    "autoload": {
+        "psr-4": {
+            "MicroweberPackages\\SecurityScanner\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "homepage": "http://microweber.com",
+    "license": "MIT",
+    "support": {
+        "email": "support@microweber.com"
+    }
+}
